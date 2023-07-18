@@ -9,10 +9,20 @@ button.addEventListener("click", itemCreation);
 
 function itemCreation() {
     let newItemElement = document.createElement('p');
+   // let newItemButton = document.createElement('button');
     let newItem = document.createTextNode(itemText.value);
-    newItemElement.appendChild(newItem);
-    outputItem.appendChild(newItemElement);
+   // let newItemButtonText = document.createTextNode('removeItem');
 
+    newItemElement.appendChild(newItem);
+    //newItemButton.appendChild(newItemButtonText);
+    outputItem.appendChild(newItemElement);
+    // document.outputItem.appendChild(newItemButton);
+    //DELETE BUTTON NEEDED
+
+    //CREATE CLASS OF ITEMS?
+    newItemElement.addEventListener('click', function(){
+        newItemElement.classList.toggle("taskDone");
+    })
     //outputItem.appendChild(itemText);
     //outputItem.innerHTML = itemText.value;
     // alert("Child Appended");
