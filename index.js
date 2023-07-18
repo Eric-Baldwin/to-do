@@ -16,7 +16,7 @@ function itemCreation() {
     let removeButton = document.createElement("button");
     removeButton.innerText = "removeItem";
     removeButton.addEventListener('click', function() {
-        alert('item removed');
+        removeButton.parentElement.remove();
         //delete functionality
     })
     newItemElement.appendChild(removeButton);
