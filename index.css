@@ -1,0 +1,19 @@
+/* Top Part of Page Header */
+
+.header1 {
+    color: purple;
+}
+
+.intro-header{
+  /*  border: 5px solid black; */
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Search Task and Submit Button */
+.searchtext{
+   /* border: 5px solid black; */
+    margin-left: 350px;
+
+}
