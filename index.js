@@ -1,11 +1,17 @@
 let itemText = document.getElementById("add-input");
 let button = document.querySelector(".button-submit");
 let outputItem = document.querySelector("#listBox");
-alert("Alert");
+//alert("Alert");
 
-button.addEventListener("click", itemCreation());
+button.addEventListener("click", itemCreation);
 
 function itemCreation() {
-    outputItem.appendChild(itemText);
+    let newItemElement = document.createElement('p');
+    let newItem = document.createTextNode(itemText.value);
+    newItemElement.appendChild(newItem);
+    outputItem.appendChild(newItemElement);    
+
+    //outputItem.appendChild(itemText);
+    //outputItem.innerHTML = itemText.value;
     alert("Child Appended");
 }
