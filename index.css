@@ -38,14 +38,6 @@ body {
   /*  margin-left: 350px; */
 }
 
-
-
-#listBox button {
-  margin-left: 200px; 
-  border: 1px solid red; 
-  float: right;
-  
-}
 .box-container {
   display: flex;
   justify-content: center; 
@@ -56,22 +48,38 @@ body {
   margin-left:200px;
   margin-right: 200px;
 }
+
+#listBox button {
+  margin-left: 0px; 
+  /*border: 1px solid red; */
+  float: right;
+  
+}
+
 .listBox p {
   /*padding-left: 200px;
   padding-right: 200px; */
-  border: 1px solid red; 
-  width: 300px;
+  /*border: 1px solid red; */
+  width: 400px;
+  
   /*display:flex;
   justify-content: flex-start;*/
-  
+  margin:30px;
 
   
 } 
 
+.listBox p:nth-child(even){
+  background-color: lightblue;
+}
+
+.listBox p:nth-child(odd){
+  background-color: lightpink
+}
 .listBox p , button {
- /* border-bottom: 1px solid black; */
+  border-bottom: 1px solid black; 
  
- clear: both;
+
   
 
 }
