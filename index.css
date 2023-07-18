@@ -1,5 +1,24 @@
 /* Top Part of Page Header */
 
+body {
+  background-color: #b1aebb;
+}
+
+.task{
+  text-align:center;
+  font-size: 34px;
+}
+
+.intro{
+  display: flex;
+  justify-content: center;
+  font-size: 34px;
+}
+
+.sub-intro {
+  display: flex;
+  justify-content: center;
+}
 .header1 {
     color: purple;
 }
@@ -14,6 +33,25 @@
 /* Search Task and Submit Button */
 .searchtext{
    /* border: 5px solid black; */
-    margin-left: 350px;
+   display: flex;
+   justify-content: center;
+  /*  margin-left: 350px; */
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  border: 5px solid #5f43b2;
+ /* width: 50%;
+  height: 50%; */
+  margin-top: 50px;
+  margin-left:200px;
+  margin-right: 200px;
+}
+
+.listBox p {
+  border-bottom: 1px solid black;
+  
 
 }
+
