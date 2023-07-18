@@ -9,16 +9,17 @@ button.addEventListener("click", itemCreation);
 
 function itemCreation() {
     let newItemElement = document.createElement('p');
-   // let newItemButton = document.createElement('button');
     let newItem = document.createTextNode(itemText.value);
-   // let newItemButtonText = document.createTextNode('removeItem');
-
     newItemElement.appendChild(newItem);
-    //newItemButton.appendChild(newItemButtonText);
     outputItem.appendChild(newItemElement);
-    // document.outputItem.appendChild(newItemButton);
     //DELETE BUTTON NEEDED
-
+    let removeButton = document.createElement("button");
+    removeButton.innerText = "removeItem";
+    removeButton.addEventListener('click', function() {
+        alert('item removed');
+        //delete functionality
+    })
+    newItemElement.appendChild(removeButton);
     //CREATE CLASS OF ITEMS?
     newItemElement.addEventListener('click', function(){
         newItemElement.classList.toggle("taskDone");
