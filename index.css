@@ -38,9 +38,17 @@ body {
   /*  margin-left: 350px; */
 }
 
+
+
+#listBox button {
+  margin-left: 200px; 
+  border: 1px solid red; 
+  float: right;
+  
+}
 .box-container {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   border: 5px solid #5f43b2;
  /* width: 50%;
   height: 50%; */
@@ -48,13 +56,32 @@ body {
   margin-left:200px;
   margin-right: 200px;
 }
-
 .listBox p {
-  border-bottom: 1px solid black;
+  /*padding-left: 200px;
+  padding-right: 200px; */
+  border: 1px solid red; 
+  width: 300px;
+  /*display:flex;
+  justify-content: flex-start;*/
+  
+
+  
+} 
+
+.listBox p , button {
+ /* border-bottom: 1px solid black; */
+ 
+ clear: both;
   
 
 }
 
 .taskDone{
   text-decoration: line-through;
+  color: red;
+}
+
+.removeItem{
+  margin: 4px;
+  color: blue;
 }
